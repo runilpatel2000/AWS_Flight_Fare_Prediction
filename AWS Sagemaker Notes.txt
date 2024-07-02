@@ -1,0 +1,27 @@
+AWS Sagemaker - It is a tool which allows us to do ML steps in single place itself. 
+
+Inside AWS Sagemaker it has different service through which we can access it they are:
+
+AWS IAM: Identity and Access Management
+
+It is a AWS service that deals with Permission and Access
+
+When we login into the AWS with email ID and Password AWS calls us a root user. Root user has access to all services and permission to AWS we can use any AWS service that we want .If someone wants to access the service under root user it has introduced three security 
+IAM Group - If we want to do a project in a group of 100 people and want to access the permission so we will create a group inside it and give common permission 
+
+IAM User - Inside root user create new credential if we ant to access to only 4 cloud services so we will use this IAM user and if we want to share the credential to others they will have access to those 4 services which I have selected.
+IAM Role - This is used for short term project or small scale project so for that IAM Role is convenient for us.
+
+AWS EC2: It is Elastic Cloud Compute. We can think of a virtual computer on cloud. If we want to run some task because of configuration of laptop we can not run so with the help of virtual computer we can run the task based on requirement suppose if we require 8GB RAM so we can select it and run the task, if we require 100 GB RAM we can buy it on rent and we can run the task on that. In small scale project we can use this service suppose in ML we can use this service for train the model and tune the model.
+
+AWS S3 - It stands for Simple Storage Service. It is a simply virtual container on the cloud which we can save and store our files based on the requirements. We will use S3 bucket in the AWS. In ML Project We can store our dataset and best model after training and tuning.
+
+Even AWS Sagemeaker provides UI with the help of Sagemaker Studio IDE
+
+SDK - It is a software Development Kit. It is a collection of tools that helps you to create a software development process. To develop software it require IDE, Documentation, libraries, Code, Guides and API. 
+
+Why we will use SDK?
+
+We will be using Python to train the models.
+Need a way for python to interact with AWS service.
+with the help of Python we will be using S3 bucket, IAM Role, EC2 and Sagemaker.To link Python with this we use BOTO3 (AWS SDK)
